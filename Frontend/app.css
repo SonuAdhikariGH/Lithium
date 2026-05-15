@@ -1,0 +1,114 @@
+* {
+  font-family: "Funnel Display", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+/* home section*/
+.home-section {
+  height: 100vh;
+  margin: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* paragraph/title, desc container */
+.para-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* title */
+  .main-para {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  /* description */
+  .main-desc {
+    font-size: 1.2rem;
+  }
+}
+
+/* btn container */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+
+  #getStarted {
+    background-color: #80acaed0;
+    font-size: 1rem;
+    padding: 6px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border: solid 2px #444a4adf;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+/* get started hover */
+#getStarted:hover {
+  background-color: #559a9a75;
+  transition: all 0.5s ease-in-out;
+}
+
+/* guide section */
+.lithium-guide {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  gap: 6px;
+
+  .para-guide {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  pointer-container {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .point-one {
+    background-color: bisque;
+    padding: 6px;
+    border-radius: 8px;
+    border: solid 2px rgb(76, 69, 60);
+  }
+  .point-two {
+    background-color: bisque;
+    padding: 6px;
+    border-radius: 8px;
+    border: solid 2px rgb(76, 69, 60);
+  }
+  .point-three {
+    background-color: bisque;
+    padding: 6px;
+    border-radius: 8px;
+    border: solid 2px rgb(76, 69, 60);
+  }
+  .point-four {
+    background-color: bisque;
+    padding: 6px;
+    border-radius: 8px;
+    border: solid 2px rgb(76, 69, 60);
+  }
+}

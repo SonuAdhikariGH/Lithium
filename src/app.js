@@ -7,7 +7,7 @@ app.use(express.json());
 
 connectDB();
 
-// get route
+// post route
 app.post("/create-post", async (req, res) => {
   const post = req.body;
 
@@ -21,6 +21,7 @@ app.post("/create-post", async (req, res) => {
     caption: post.caption,
     subject: post.subject,
     date: new Date().toLocaleString(),
+    user: "Lithium Guest",
   };
 
   await postModel.create(postStructure);
@@ -30,6 +31,7 @@ app.post("/create-post", async (req, res) => {
   });
 });
 
+// get route
 app.get("/get-post", async (req, res) => {
   const posts = await postModel.find();
 
